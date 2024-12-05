@@ -18,7 +18,6 @@ public class FirstPersonController : MonoBehaviour
 {
     private Rigidbody rb;
 
-    origscriptname.paused;
 
     #region Camera Movement Variables
 

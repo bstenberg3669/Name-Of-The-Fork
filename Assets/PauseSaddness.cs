@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-static var Paused = false;
+
 public class PauseSaddness : MonoBehaviour
 {
     public static bool paused = false;
