@@ -10,7 +10,7 @@ public class PauseSaddness : MonoBehaviour
     
     public GameObject pauseMenu;
     
-    public GameObject pauseMen;
+    
     
 
 
@@ -35,7 +35,7 @@ public class PauseSaddness : MonoBehaviour
     void Resume()
     {
         pauseMenu.SetActive(false);
-        pauseMen.SetActive(true);
+        
         Time.timeScale = 1f;
         paused = false;
     }
@@ -43,7 +43,7 @@ public class PauseSaddness : MonoBehaviour
     void Pause()
     {
         pauseMenu.SetActive(true);
-        pauseMen.SetActive(false);
+        
         Time.timeScale = 0f;
         paused = true;
     }
