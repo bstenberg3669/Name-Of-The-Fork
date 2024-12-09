@@ -13,6 +13,12 @@ public class EnemyAI : MonoBehaviour
    
    public LayerMask whatIsGround, whatIsPlayer;
 
+   public Transform projectile;
+   
+   public Transform projectileSpawn;
+   
+   public float projectileSpeed;
+
    public float health;
    //Patrol
    public Vector3 walkPoint;
@@ -42,6 +48,7 @@ public class EnemyAI : MonoBehaviour
       if (!playerInSight && !playerInAttackRange) Patroling();
       if (playerInSight && !playerInAttackRange) Chasing();
       if (playerInSight && playerInAttackRange) Attacking();
+      
    }
 
    private void Patroling()
@@ -83,6 +90,13 @@ public class EnemyAI : MonoBehaviour
 
       if (!alreadyFired)
       {
+         
+         
+         var proj = Instantiate(projectile, projectileSpawn.position, projectileSpawn.rotation);
+         proj.GetComponent<Rigidbody>().velocity = transform.forward * projectileSpeed;
+         
+         
+         
          alreadyFired = true;
          Invoke(nameof(ResetAttack), fireRate);
       }
@@ -104,4 +118,12 @@ public class EnemyAI : MonoBehaviour
    {
       Destroy(gameObject);
    }
+
+   private String bulletLife(Rigidbody rigidbody)
+   {
+      Destroy(rigidbody);
+      return "bullet gone";
+   }
+
+   
 }
