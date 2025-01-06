@@ -50,6 +50,7 @@ public class BulletType : MonoBehaviour
         Collider[] enemies = Physics.OverlapSphere(transform.position, explosionRange, whatIsEnemies);
         for (int i = 0; i < enemies.Length; i++)
         {
+            //Apply damage to enemies
             enemies[i].GetComponent<EnemyAI>().TakeDamage(explosionDamage);
         }
         
@@ -78,5 +79,11 @@ public class BulletType : MonoBehaviour
         
         //Set gravity
         rb.useGravity = useGravity;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, explosionRange);
     }
 }
