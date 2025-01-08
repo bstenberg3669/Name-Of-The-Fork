@@ -22,6 +22,10 @@ public class GunScript : MonoBehaviour
     
     int bulletsLeft, bulletsShot;
     
+    //Recoil
+    public Rigidbody playerRb;
+    public float recoilForce;
+    
     //Bools
     bool shooting, readyToShoot, reloading;
     
@@ -62,7 +66,11 @@ public class GunScript : MonoBehaviour
         else shooting = Input.GetKeyDown(KeyCode.Mouse0);
         
         //Reloading
-        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading) Reload();
+        if (Input.GetKeyDown(KeyCode.R) && bulletsLeft < magazineSize && !reloading)
+        {
+            Debug.Log("Reloading");
+            Reload();
+        }
         //Reload automatically if you try to shoot without any ammo
         if (readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
         
@@ -81,36 +89,34 @@ public class GunScript : MonoBehaviour
         readyToShoot = false;
         
         //Find the exact hit position using a raycast
-        Ray ray = fpsCamera.ScreenPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Ray ray = fpsCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0)); //Just a ray through the middle of your current view
         RaycastHit hit;
-        //Check if ray hits something
+
+        //check if ray hits something
         Vector3 targetPoint;
         if (Physics.Raycast(ray, out hit))
             targetPoint = hit.point;
         else
-        {
-            targetPoint = ray.GetPoint(75); //Far away point for the bullet to go towards if it doese'nt run into an object
-        }
-        
+            targetPoint = ray.GetPoint(75); //Just a point far away from the player
+
         //Calculate direction from attackPoint to targetPoint
         Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
-        
+
         //Calculate spread
-        //Debug.Log(Random.Range(1,2));
         float x = UnityEngine.Random.Range(-spread, spread);
         float y = UnityEngine.Random.Range(-spread, spread);
-        
+
         //Calculate new direction with spread
-        Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Just add the spread to the last direction
-        
+        Vector3 directionWithSpread = directionWithoutSpread + new Vector3(x, y, 0); //Just add spread to last direction
+
         //Instantiate bullet/projectile
-        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity); //Instantiates bullet with 'currentBullet' object
-        //Rotate bullet to proper direction
+        GameObject currentBullet = Instantiate(bullet, attackPoint.position, Quaternion.identity); //store instantiated bullet in currentBullet
+        //Rotate bullet to shoot direction
         currentBullet.transform.forward = directionWithSpread.normalized;
-        
+
         //Add forces to bullet
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
-        //currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse); <-- Allows for shots that bounce or have vertical jazz
+        //currentBullet.GetComponent<Rigidbody>().AddForce(fpsCamera.transform.up * upwardForce, ForceMode.Impulse); <--- (for bouncing bullets)
         
         //Instantiate muzzle flash
         if (muzzleFlash != null)
@@ -148,7 +154,8 @@ public class GunScript : MonoBehaviour
 
     private void ReloadFinished()
     {
-        bulletsLeft = magazineSize;
+        bulletsLeft += (magazineSize-bulletsLeft);
+        reloading = false;
         
     }
     

@@ -24,7 +24,7 @@ public class BulletType : MonoBehaviour
     public bool explodeOnTouch = true;
 
     private int collisions;
-    private PhysicMaterial physics_mat;
+    PhysicMaterial physics_mat;
 
     private void Start()
     {
