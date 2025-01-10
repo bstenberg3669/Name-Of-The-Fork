@@ -40,6 +40,13 @@ public class GunScript : MonoBehaviour
     //For bug fixing
     public bool allowInvoke = true;
 
+    public State state;
+    public enum State
+    {
+        pistol,
+        shotgun
+    }
+    
     private void Awake()
     {
         //make sure mag is full
@@ -50,6 +57,7 @@ public class GunScript : MonoBehaviour
     private void Update()
     {
         MyInput();
+        StateManager();
         
         //Set ammo display, if it exists
         if (ammunitionDisplay != null)
@@ -72,7 +80,10 @@ public class GunScript : MonoBehaviour
             Reload();
         }
         //Reload automatically if you try to shoot without any ammo
-        if (readyToShoot && shooting && !reloading && bulletsLeft <= 0) Reload();
+        if (readyToShoot && shooting && !reloading && bulletsLeft <= 0)
+        {
+            bulletsLeft += (magazineSize-bulletsLeft);
+        }
         
         //Shooting
         if (readyToShoot && shooting && !reloading && bulletsLeft > 0)
@@ -81,6 +92,44 @@ public class GunScript : MonoBehaviour
             bulletsShot = 0;
 
             Shoot();
+        }
+    }
+
+    private void StateManager()
+    {
+        //Pistol
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            state = State.pistol;
+            shootForce = 250f;
+            upwardForce = 0f;
+            timeBetweenShooting = 0.25f;
+            spread = 0.05f;
+            reloadTime = 0.5f;
+            timeBetweenShots = 0f;
+            magazineSize = 12;
+            bulletsPerTap = 1;
+            allowHoldFire = true;
+            recoilForce = 0f;
+            bulletsLeft += (magazineSize-bulletsLeft);
+            
+            
+        }
+        //Shotgun
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            state = State.shotgun;
+            shootForce = 175;
+            upwardForce = 0f;
+            timeBetweenShooting = 0.6f;
+            spread = 2f;
+            reloadTime = 0.5f;
+            timeBetweenShots = 0f;
+            magazineSize = 16;
+            bulletsPerTap = 8;
+            allowHoldFire = false;
+            recoilForce = 0f;
+            bulletsLeft += (magazineSize-bulletsLeft);
         }
     }
 
