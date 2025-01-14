@@ -6,9 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="74fc5a88-6e6c-4816-924b-2fb35ead2463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PauseSaddness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PauseSaddness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMixer.mixer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMixer.mixer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player Prefabs/PlayerWithGun.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player Prefabs/PlayerWithGun.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scenes 1/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scenes 1/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SettingsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SettingsMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +94,7 @@
       <workItem from="1733250940766" duration="3766000" />
       <workItem from="1733424150149" duration="2657000" />
       <workItem from="1733768230865" duration="1080000" />
+      <workItem from="1736881243797" duration="1727000" />
     </task>
     <servers />
   </component>
