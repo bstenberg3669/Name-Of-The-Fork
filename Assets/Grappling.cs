@@ -23,7 +23,7 @@ public class Grappling : MonoBehaviour
     private float grapplingCdTimer;
 
     [Header("Input")] 
-    public KeyCode grappleKey = KeyCode.Mouse0;
+    public KeyCode grappleKey = KeyCode.G;
 
     private bool grappling;
 
@@ -67,7 +67,7 @@ public class Grappling : MonoBehaviour
         }
         
         lr.enabled = true;
-        lr.SetPosition(0, grapplePoint);
+        lr.SetPosition(1, grapplePoint);
     }
 
     private void ExecuteGrapple()

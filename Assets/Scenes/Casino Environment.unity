@@ -1808,6 +1808,7 @@ GameObject:
   - component: {fileID: 1029645780}
   - component: {fileID: 1029645781}
   - component: {fileID: 1029645782}
+  - component: {fileID: 1029645783}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -1966,6 +1967,28 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1029645783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029645779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28e8141905bb245f3a28909ab4cd3717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1652790601}
+  gunTip: {fileID: 1723578167}
+  whatIsGrappleable:
+    serializedVersion: 2
+    m_Bits: 4096
+  lr: {fileID: 1029645782}
+  maxGrappleDistance: 25
+  grappleDelayTime: 0.25
+  grapplingCd: 1
+  grappleKey: 103
 --- !u!1 &1089083527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,6 +3128,7 @@ MonoBehaviour:
     m_Bits: 4096
   orientation: {fileID: 46717388}
   state: 0
+  freeze: 0
 --- !u!54 &1518569329
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
+using Vector3 = UnityEngine.Vector3;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -54,8 +56,11 @@ public class PlayerMovement : MonoBehaviour
         walking,
         sprinting,
         crouching,
-        air
+        air,
+        freeze
     }
+
+    public bool freeze;
 
     private void Start()
     {
@@ -121,6 +126,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void StateHandler()
     {
+        //mode - freeze
+        if (freeze)
+        {
+            state = MovementState.freeze;
+            moveSpeed = 0;
+            rb.velocity = Vector3.zero;
+        }
+        
         // mode - crouching
         //if (grounded && Input.GetKey(crouchKey))
         //{
@@ -129,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         //}
             
         // mode - sprinting
-        if (grounded && Input.GetKey(sprintKey))
+        else if (grounded && Input.GetKey(sprintKey))
         {
             state = MovementState.sprinting;
             moveSpeed = sprintSpeed;
