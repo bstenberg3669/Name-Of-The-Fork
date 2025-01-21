@@ -22,9 +22,9 @@ TagManager:
   - 
   - Bullet
   - Ground
-  - 
-  - 
-  - 
+  - Walls
+  - Ceiling
+  - Grappleable
   - 
   - 
   - 

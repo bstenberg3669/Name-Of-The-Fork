@@ -12,7 +12,7 @@ public class BulletType : MonoBehaviour
     //Stats
     [Range(0f, 1f)]
     public float bounciness;
-    public bool useGravity;
+    //public bool useGravity; (usage in line 81)
     
     //Damage
     public int explosionDamage;
@@ -78,7 +78,7 @@ public class BulletType : MonoBehaviour
         GetComponent<SphereCollider>().material = physics_mat;
         
         //Set gravity
-        rb.useGravity = useGravity;
+        rb.useGravity = false;
     }
 
     private void OnDrawGizmosSelected()
