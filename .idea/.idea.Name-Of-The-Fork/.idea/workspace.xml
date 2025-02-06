@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74fc5a88-6e6c-4816-924b-2fb35ead2463" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Casino Environment.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Casino Environment.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Night.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Night.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,18 +29,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "SettingsFix",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;SettingsFix&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MacOS/Unity" />
@@ -90,6 +95,7 @@
       <workItem from="1733768230865" duration="1080000" />
       <workItem from="1736881243797" duration="1727000" />
       <workItem from="1737569889183" duration="684000" />
+      <workItem from="1738870563460" duration="20000" />
     </task>
     <servers />
   </component>
