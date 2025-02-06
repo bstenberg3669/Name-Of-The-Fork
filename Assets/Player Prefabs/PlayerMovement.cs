@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     public float sprintSpeed;
     public float swingSpeed;
+    public float health;
 
     public float groundDrag;
     
@@ -306,5 +308,12 @@ public class PlayerMovement : MonoBehaviour
                                                + Mathf.Sqrt(2 * (displacementY - trajectoryHeight) / gravity));
 
         return velocityXZ + velocityY;
+    }
+    
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0) Application.Quit();
     }
 }
