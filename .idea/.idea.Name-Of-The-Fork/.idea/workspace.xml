@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74fc5a88-6e6c-4816-924b-2fb35ead2463" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hovl Studio/Magic effects pack/Materials/Crack.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Night.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Night.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseSaddness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PauseSaddness.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/Palletes/base color.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/lattice floor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sci-Fi Styled Modular Pack/Materials/projector_warning.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tomodachi Collection_ Demo - Mii Maker.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tomodachi Collection_ Demo - Mii Maker.mp3.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,10 @@
       <workItem from="1736881243797" duration="1727000" />
       <workItem from="1737569889183" duration="684000" />
       <workItem from="1738870563460" duration="20000" />
+      <workItem from="1739210933779" duration="1725000" />
+      <workItem from="1739213934319" duration="130000" />
+      <workItem from="1739214103747" duration="1084000" />
+      <workItem from="1739215390216" duration="989000" />
     </task>
     <servers />
   </component>
