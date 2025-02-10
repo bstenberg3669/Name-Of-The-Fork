@@ -16,7 +16,7 @@ public class GunScript : MonoBehaviour
     public float shootForce, upwardForce;
     
     //Gun stats
-    public float timeBetweenShooting, spread, reloadTime, timeBetweenShots;
+    public float timeBetweenShooting, spread, reloadTime, timeBetweenShots, damage;
     public int magazineSize, bulletsPerTap;
     public bool allowHoldFire;
     
@@ -112,8 +112,8 @@ public class GunScript : MonoBehaviour
             allowHoldFire = true;
             recoilForce = 0f;
             bulletsLeft += (magazineSize-bulletsLeft);
-            
-            
+            damage = 10f;
+
         }
         //Shotgun
         if (Input.GetKeyDown(KeyCode.Alpha2))
@@ -130,6 +130,7 @@ public class GunScript : MonoBehaviour
             allowHoldFire = false;
             recoilForce = 0f;
             bulletsLeft += (magazineSize-bulletsLeft);
+            damage = 5f;
         }
     }
 
@@ -147,6 +148,11 @@ public class GunScript : MonoBehaviour
             targetPoint = hit.point;
         else
             targetPoint = ray.GetPoint(75); //Just a point far away from the player
+
+        if (hit.transform.GetComponent<HealthController>())
+        {
+            hit.transform.GetComponent<HealthController>().ApplyDamage(damage);
+        }
 
         //Calculate direction from attackPoint to targetPoint
         Vector3 directionWithoutSpread = targetPoint - attackPoint.position;
