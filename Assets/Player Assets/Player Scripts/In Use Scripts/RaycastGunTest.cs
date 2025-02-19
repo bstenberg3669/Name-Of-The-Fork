@@ -9,7 +9,7 @@ public class RaycastGunTest : MonoBehaviour
     private float range = 100000000f; //How far the gun can shoot (we don't have a range cap so don't change it)
 
     public Transform attackPoint; //Point that the gun shoots from
-    public ParticleSystem muzzleFlash; //Guess Einstein
+    public ParticleSystem muzzleFlash; //Guess, Einstein
     
     public float fireRate = 0.1f; //How long until the weapon can fire again
 
