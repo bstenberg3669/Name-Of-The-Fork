@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 15
+    x: 13
     y: 70
     width: 2545
     height: 1284
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 27
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 28
+  controlID: 18
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 29
+  controlID: 19
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,7 +298,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 486
+    x: 484
     y: 100
     width: 1639
     height: 893
@@ -623,6 +623,19 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: UnityEditor.SceneViewCameraOverlay
+      index: 11
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: 41182920924e94b6fb4095a4bbb626c5
   m_Gizmos: 1
@@ -634,9 +647,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -94.84631, y: -3.720645, z: -157.98961}
+    m_Target: {x: 86.11665, y: 62.103714, z: -176.36371}
     speed: 2
-    m_Value: {x: -94.84631, y: -3.720645, z: -157.98961}
+    m_Value: {x: 86.11665, y: 62.103714, z: -176.36371}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -682,9 +695,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0064177206, y: 0.96441466, z: -0.02344584, w: -0.26348552}
+    m_Target: {x: -0.035275415, y: 0.9528061, z: 0.121852905, w: 0.2760353}
     speed: 2
-    m_Value: {x: -0.0064525236, y: 0.9639648, z: -0.023434887, w: -0.26491714}
+    m_Value: {x: -0.03527317, y: 0.95274544, z: 0.12184515, w: 0.27601773}
   m_Size:
     m_Target: 106.99835
     speed: 2
@@ -915,7 +928,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 15
+    x: 13
     y: 100
     width: 470
     height: 893
@@ -932,23 +945,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7c770000
-      m_LastClickedID: 0
-      m_ExpandedIDs: 24e1feffa0f5feffa4f5feff7882ffff86d9ffff8cd9ffff7ce3ffff1ce5ffff36e7ffff94edffff5ceffffffcf8ffff0efbffff4a940000bc950000
+      m_SelectedIDs: d2ceffff
+      m_LastClickedID: -12590
+      m_ExpandedIDs: 30d3ffff48d3ffff50d3ffff56d3ffff68d7ffff04f9ffff0efbffff12950000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: projector
-        m_OriginalName: projector
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -8434
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -978,7 +991,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 486
+    x: 484
     y: 100
     width: 1639
     height: 893
@@ -1078,7 +1091,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2127
+    x: 2125
     y: 100
     width: 432
     height: 893
@@ -1099,7 +1112,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 158.09271
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1125,7 +1138,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 15
+    x: 13
     y: 1014
     width: 2545
     height: 299
@@ -1150,7 +1163,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/Scenes 1
+    - Assets/Quirky Series Ultimate/_Animations
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1158,16 +1171,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/Scenes 1
+  - Assets/Quirky Series Ultimate/_Animations
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/nparker7317/Desktop/blah/Name-Of-The-Fork
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 313}
-    m_SelectedIDs: 1e800000
-    m_LastClickedID: 32798
-    m_ExpandedIDs: 00000000087700000a7700000c7700000e77000010770000127700001477000016770000187700001a7700001c7700001e770000207700002277000026770000287700002a770000427700006c77000034790000b67c0000dc900000e290000000ca9a3b
+    scrollPos: {x: 0, y: 121}
+    m_SelectedIDs: 58770000
+    m_LastClickedID: 30552
+    m_ExpandedIDs: 00000000087700000a7700000c7700000e77000010770000127700001477000016770000187700001a7700001c7700001e77000020770000227700002477000026770000287700002a7700002c7700002e770000307700006277000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1195,7 +1208,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000087700000a7700000c7700000e77000010770000127700001477000016770000187700001a7700001c7700001e77000020770000227700002477000026770000287700002a770000
+    m_ExpandedIDs: 00000000087700000a7700000c7700000e77000010770000127700001477000016770000187700001a7700001c7700001e77000020770000227700002477000026770000287700002a7700002c7700002e77000030770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
