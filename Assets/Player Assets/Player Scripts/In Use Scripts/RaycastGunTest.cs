@@ -15,6 +15,24 @@ public class RaycastGunTest : MonoBehaviour
 
     private float fireTimer; //Counts time for fireRate to work
     
+    public static float attackPointX = AttackPointPosition.posX;
+    public static float attackPointY = AttackPointPosition.posY;
+    public static float attackPointZ = AttackPointPosition.posZ;
+    
+    public static float attackPointRX = AttackPointPosition.rotX;
+    public static float attackPointRY = AttackPointPosition.rotY;
+    public static float attackPointRZ = AttackPointPosition.rotZ;
+
+    public static float returnAttackPointX;
+    public static float returnAttackPointY;
+    public static float returnAttackPointZ;
+
+    public static float returnAttackPointRX;
+    public static float returnAttackPointRY;
+    public static float returnAttackPointRZ;
+    
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +51,17 @@ public class RaycastGunTest : MonoBehaviour
         {
             fireTimer += Time.deltaTime; //Make the timer time
         }
-    }
 
+        returnAttackPointX = gameObject.transform.position.x - 0.3160004f;
+        returnAttackPointY = gameObject.transform.position.y + 5.93f;
+        returnAttackPointZ = gameObject.transform.position.z - 0.209f;
+
+        returnAttackPointRX = gameObject.transform.rotation.x;
+        returnAttackPointRY = gameObject.transform.rotation.y;
+        returnAttackPointRZ = gameObject.transform.rotation.z;
+
+    }
+ 
     
 
     private void Fire()
