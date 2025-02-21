@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Enemies
   - Terrain
+  - Interactable
   layers:
   - Default
   - TransparentFX
