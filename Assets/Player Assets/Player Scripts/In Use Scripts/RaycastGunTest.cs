@@ -2,12 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Rendering;
 
 public class RaycastGunTest : MonoBehaviour
 {
     private Animator anim;
 
-    public LineRenderer lr;
+    public LineRenderer lrPistol;
     
     private float range = 100000000f; //How far the gun can shoot (we don't have a range cap so don't change it)
     private float spread = 0; //Controls the spread if the gun has any
@@ -27,6 +29,7 @@ public class RaycastGunTest : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        lrPistol.enabled = false;
     }
 
     // Update is called once per frame
@@ -37,20 +40,22 @@ public class RaycastGunTest : MonoBehaviour
             Fire(); //Execute the fuction if we press the left mouse button
         }
 
-        if (Input.GetButtonUp("Fire2"))
-        {
-            AltFire(); //Execute alternate fire for weapon on press of right mouse button
-        }
+        //if (Input.GetButtonUp("Fire2"))
+        //{
+            //AltFire(); //Execute alternate fire for weapon on press of right mouse button
+        //}
 
         if (fireTimer < fireRate)
         {
             fireTimer += Time.deltaTime; //Make the timer time
         }
         
-        if (altTimer < fireRate)
+        if (altTimer < altRate)
         {
             altTimer += Time.deltaTime; //Make the timer time
         }
+        
+        
 
     }
 
@@ -73,9 +78,10 @@ public class RaycastGunTest : MonoBehaviour
 
         
         
-        lr.enabled = true;
-        lr.SetPosition(0, muzzleFlash.transform.position);
-        lr.SetPosition(1, hit.point);
+        lrPistol.enabled = true;
+        lrPistol.SetPosition(0, muzzleFlash.transform.position);
+        lrPistol.SetPosition(1, hit.point);
+        
         
         
         fireTimer = -0.1f; //Reset timer
@@ -83,37 +89,40 @@ public class RaycastGunTest : MonoBehaviour
         Invoke(nameof(PostFire),0.045f);
     }
 
-    private void AltFire()
-    {
-        if (altTimer < fireRate) return;
+    //private void AltFire()
+    //{
+        //if (altTimer < altRate) return;
 
-        RaycastHit hit;
+        //RaycastHit hit;
 
-        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.collider.name);
-        }
+        //if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        //{
+            //Debug.Log(hit.collider.name);
+        //}
         
-        anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
-        muzzleFlash.Play();
+        //anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
+        //muzzleFlash.Play();
 
-        
-        
-        lr.enabled = true;
-        lr.SetPosition(0, muzzleFlash.transform.position);
-        lr.SetPosition(1, SpreadCalculator());
-        lr.SetPosition(2, SpreadCalculator());
-        lr.SetPosition(3, SpreadCalculator());
-        lr.SetPosition(4, SpreadCalculator());
-        lr.SetPosition(5, SpreadCalculator());
-        lr.SetPosition(6, SpreadCalculator());
         
         
-        altTimer = -2.5f; //Reset timer
+        //lrPistol.enabled = true;
+        //lrPistol.SetPosition(0, muzzleFlash.transform.position);
+        //lrPistol.SetPosition(1, SpreadCalculator());
+        //lrPistol.SetPosition(2, SpreadCalculator());
+        //lrPistol.SetPosition(3, SpreadCalculator());
+        //lrPistol.SetPosition(4, SpreadCalculator());
+        //lrPistol.SetPosition(5, SpreadCalculator());
+        //lrPistol.SetPosition(6, SpreadCalculator());
+        
+        
+        
+        //altTimer = -2.5f; //Reset timer
 
-        Invoke(nameof(PostFire),0.045f);
-    }
+        //Invoke(nameof(PostFire),0.045f);
+    //}
 
+    
+    
     private Vector3 SpreadCalculator()
     {
         //Spread
@@ -139,6 +148,6 @@ public class RaycastGunTest : MonoBehaviour
 
     private void PostFire()
     {
-        lr.enabled = false;
+        lrPistol.enabled = false;
     }
 }
