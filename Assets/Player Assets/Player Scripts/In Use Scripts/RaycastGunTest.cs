@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
+using UnityEngine.UIElements;
 
 public class RaycastGunTest : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class RaycastGunTest : MonoBehaviour
 
     private float fireTimer; //Counts time for fireRate to work
     private float altTimer; //Counts time for altRate to work
+
+    public float playerDamage = 10f; //Damage the gun does per bullet
     
     
     
@@ -50,10 +53,10 @@ public class RaycastGunTest : MonoBehaviour
             fireTimer += Time.deltaTime; //Make the timer time
         }
         
-        if (altTimer < altRate)
-        {
-            altTimer += Time.deltaTime; //Make the timer time
-        }
+        //if (altTimer < altRate)
+        //{
+            //altTimer += Time.deltaTime; //Make the timer time
+        //}
         
         
 
@@ -71,6 +74,11 @@ public class RaycastGunTest : MonoBehaviour
         if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
         {
             Debug.Log(hit.collider.name);
+            if (hit.collider.name == "AI")
+            {
+                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                GetComponent<PlayerHealth>().playerHealth += 5;
+            }
         }
         
         anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
@@ -81,7 +89,9 @@ public class RaycastGunTest : MonoBehaviour
         lrPistol.enabled = true;
         lrPistol.SetPosition(0, muzzleFlash.transform.position);
         lrPistol.SetPosition(1, hit.point);
+
         
+            
         
         
         fireTimer = -0.1f; //Reset timer
@@ -150,4 +160,6 @@ public class RaycastGunTest : MonoBehaviour
     {
         lrPistol.enabled = false;
     }
+
+    
 }

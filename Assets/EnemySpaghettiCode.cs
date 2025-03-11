@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -14,8 +15,9 @@ public class EnemySpaghettiCode : MonoBehaviour
     
     float distanceToTarget;
     float lagTimer = 0;
-    public float health;
-    public float damage;
+    public float enemyHealth;
+    public float enemyDamage = 5f;
+    public Transform attackPoint;
     
     // Start is called before the first frame update
     void Start()
@@ -31,8 +33,11 @@ public class EnemySpaghettiCode : MonoBehaviour
     void Update()
     {
         Invoke(nameof(SetTarget), 2f);
-        bullet.SetPosition(0, gameObject.transform.position);
+        bullet.SetPosition(0, attackPoint.transform.position);
+        Death();
     }
+    
+    
 
     public void SetTarget()
     {
@@ -50,30 +55,41 @@ public class EnemySpaghettiCode : MonoBehaviour
 
     public void Attack()
     {
-            lagTarget.position = target.position;
             lagTimer += Time.deltaTime;
 
-            if (lagTimer > 0.75f)
+            if (lagTimer > 1.5f)
             {
                 RaycastHit hit;
-                
-                if (Physics.Raycast(lagTarget.position, lagTarget.transform.forward, out hit, 45f))
+
+                if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit))
                 {
                     Debug.Log(hit.collider.name);
-                } 
-                
+                    if (hit.collider.name == "PlayerCapsule")
+                    {
+                        hit.collider.GetComponent<PlayerHealth>().playerHealth -= enemyDamage;
+                    }
+                }
+
                 bullet.enabled = true;
                 bullet.SetPosition(1, lagTarget.position);
-                
+
                 Invoke(nameof(TrailCancel), 0.05f);
-                
+
                 lagTimer = -0.05f;
-                
+
             }
     }
 
     public void TrailCancel()
     {
         bullet.enabled = false;
+    }
+
+    public void Death()
+    {
+        if (enemyHealth <= 0)
+        {
+            Destroy(gameObject);   
+        }
     }
 }

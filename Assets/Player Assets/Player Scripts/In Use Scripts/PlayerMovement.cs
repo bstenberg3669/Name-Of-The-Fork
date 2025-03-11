@@ -173,6 +173,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.air;
+            
         }
     }
     private void MovePlayer()
