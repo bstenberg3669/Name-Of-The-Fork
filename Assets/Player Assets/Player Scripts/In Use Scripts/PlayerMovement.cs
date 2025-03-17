@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     public float sprintSpeed;
     public float swingSpeed;
+    public float health;
 
     public float groundDrag;
     
@@ -57,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         walking,
         sprinting,
         crouching,
+        swinging,
         air,
         freeze
     }
@@ -64,6 +67,8 @@ public class PlayerMovement : MonoBehaviour
     public bool freeze;
 
     public bool activeGrapple;
+
+    public bool swinging;
 
     private void Start()
     {
@@ -137,6 +142,12 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
         
+        else if (swinging)
+        {
+            state = MovementState.swinging;
+            moveSpeed = swingSpeed;
+        }
+        
         // mode - crouching
         //if (grounded && Input.GetKey(crouchKey))
         //{
@@ -162,11 +173,13 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             state = MovementState.air;
+            
         }
     }
     private void MovePlayer()
     {
         if (activeGrapple) return;
+        if (swinging) return;
         
         //calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
@@ -296,5 +309,12 @@ public class PlayerMovement : MonoBehaviour
                                                + Mathf.Sqrt(2 * (displacementY - trajectoryHeight) / gravity));
 
         return velocityXZ + velocityY;
+    }
+    
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0) Application.Quit();
     }
 }

@@ -1,0 +1,165 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Rendering;
+using UnityEngine.UIElements;
+
+public class RaycastGunTest : MonoBehaviour
+{
+    private Animator anim;
+
+    public LineRenderer lrPistol;
+    
+    private float range = 100000000f; //How far the gun can shoot (we don't have a range cap so don't change it)
+    private float spread = 0; //Controls the spread if the gun has any
+    
+    public Transform attackPoint; //Point that the gun shoots from
+    public ParticleSystem muzzleFlash; //Guess, Einstein
+    
+    public float fireRate = 0.1f; //How long until the weapon can fire again
+    public float altRate = 2.5f;
+
+    private float fireTimer; //Counts time for fireRate to work
+    private float altTimer; //Counts time for altRate to work
+
+    public float playerDamage = 10f; //Damage the gun does per bullet
+    
+    
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        lrPistol.enabled = false;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Fire(); //Execute the fuction if we press the left mouse button
+        }
+
+        //if (Input.GetButtonUp("Fire2"))
+        //{
+            //AltFire(); //Execute alternate fire for weapon on press of right mouse button
+        //}
+
+        if (fireTimer < fireRate)
+        {
+            fireTimer += Time.deltaTime; //Make the timer time
+        }
+        
+        //if (altTimer < altRate)
+        //{
+            //altTimer += Time.deltaTime; //Make the timer time
+        //}
+        
+        
+
+    }
+
+    
+
+
+    private void Fire()
+    {
+        if (fireTimer < fireRate) return;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.collider.name);
+            if (hit.collider.name == "AI")
+            {
+                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                GetComponent<PlayerHealth>().playerHealth += 5;
+            }
+        }
+        
+        anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
+        muzzleFlash.Play();
+
+        
+        
+        lrPistol.enabled = true;
+        lrPistol.SetPosition(0, muzzleFlash.transform.position);
+        lrPistol.SetPosition(1, hit.point);
+
+        
+            
+        
+        
+        fireTimer = -0.1f; //Reset timer
+
+        Invoke(nameof(PostFire),0.045f);
+    }
+
+    //private void AltFire()
+    //{
+        //if (altTimer < altRate) return;
+
+        //RaycastHit hit;
+
+        //if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        //{
+            //Debug.Log(hit.collider.name);
+        //}
+        
+        //anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
+        //muzzleFlash.Play();
+
+        
+        
+        //lrPistol.enabled = true;
+        //lrPistol.SetPosition(0, muzzleFlash.transform.position);
+        //lrPistol.SetPosition(1, SpreadCalculator());
+        //lrPistol.SetPosition(2, SpreadCalculator());
+        //lrPistol.SetPosition(3, SpreadCalculator());
+        //lrPistol.SetPosition(4, SpreadCalculator());
+        //lrPistol.SetPosition(5, SpreadCalculator());
+        //lrPistol.SetPosition(6, SpreadCalculator());
+        
+        
+        
+        //altTimer = -2.5f; //Reset timer
+
+        //Invoke(nameof(PostFire),0.045f);
+    //}
+
+    
+    
+    private Vector3 SpreadCalculator()
+    {
+        //Spread
+        float x = UnityEngine.Random.Range(-spread, spread);
+        float y = UnityEngine.Random.Range(-spread, spread);
+        
+        //Calculate Direction with Spread
+        Vector3 direction = attackPoint.transform.forward + new Vector3(x, y, 0);
+
+        Vector3 point = attackPoint.transform.position;
+        
+        RaycastHit hit;
+        if (Physics.Raycast(attackPoint.transform.position, direction, out hit, range))
+        {
+            Debug.Log(hit.collider.name);
+            
+            point = hit.point;
+        }
+        
+        return point;
+        
+    }
+
+    private void PostFire()
+    {
+        lrPistol.enabled = false;
+    }
+
+    
+}
