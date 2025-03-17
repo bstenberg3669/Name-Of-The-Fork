@@ -74,7 +74,7 @@ public class RaycastGunTest : MonoBehaviour
         if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
         {
             Debug.Log(hit.collider.name);
-            if (hit.collider.name == "AI")
+            if (hit.collider.name.Contains("Enemy"))
             {
                 hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
                 GetComponent<PlayerHealth>().playerHealth += 5;

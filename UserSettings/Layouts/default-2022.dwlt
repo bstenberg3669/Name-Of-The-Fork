@@ -14,19 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 227
-    y: 135
-    width: 2101
-    height: 1175
-=======
     x: 8
     y: 62
     width: 1274
     height: 1286
->>>>>>> NewGunStuff
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -51,13 +44,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2101
-    height: 1175
-=======
     width: 1274
     height: 1286
->>>>>>> NewGunStuff
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -81,11 +69,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2101
-=======
     width: 1274
->>>>>>> NewGunStuff
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -106,13 +90,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 1155
-    width: 2101
-=======
     y: 1266
     width: 1274
->>>>>>> NewGunStuff
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -134,21 +113,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-<<<<<<< HEAD
-    width: 2101
-    height: 1125
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 0
-  controlID: 67
-=======
     width: 1274
     height: 1236
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21
->>>>>>> NewGunStuff
+  controlID: 74
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,21 +138,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2101
-    height: 1125
-  m_MinSize: {x: 300, y: 100}
-  m_MaxSize: {x: 24288, y: 16192}
-  vertical: 1
-  controlID: 68
-=======
     width: 1274
     height: 1236
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 22
->>>>>>> NewGunStuff
+  controlID: 75
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,21 +164,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 2101
-    height: 820
-  m_MinSize: {x: 300, y: 50}
-  m_MaxSize: {x: 24288, y: 8096}
-  vertical: 0
-  controlID: 69
-=======
     width: 1274
     height: 712
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 23
->>>>>>> NewGunStuff
+  controlID: 69
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,13 +187,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-    width: 380
-    height: 820
-=======
     width: 265
     height: 712
->>>>>>> NewGunStuff
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
@@ -264,17 +211,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 380
-    y: 0
-    width: 1354
-    height: 820
-=======
     x: 265
     y: 0
     width: 765
     height: 712
->>>>>>> NewGunStuff
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
@@ -299,17 +239,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1734
-    y: 0
-    width: 367
-    height: 820
-=======
     x: 1030
     y: 0
     width: 244
     height: 712
->>>>>>> NewGunStuff
   m_MinSize: {x: 276, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
@@ -333,15 +266,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 820
-    width: 2101
-    height: 305
-=======
     y: 712
     width: 1274
     height: 524
->>>>>>> NewGunStuff
   m_MinSize: {x: 230, y: 271}
   m_MaxSize: {x: 10000, y: 10021}
   m_ActualView: {fileID: 17}
@@ -349,14 +276,8 @@ MonoBehaviour:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-<<<<<<< HEAD
-  - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 3
-=======
   m_Selected: 0
   m_LastSelected: 1
->>>>>>> NewGunStuff
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -377,17 +298,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 607
-    y: 165
-    width: 1352
-    height: 799
-=======
     x: 273
     y: 92
     width: 763
     height: 691
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -402,14 +316,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-<<<<<<< HEAD
-      snapOffset: {x: -171, y: -26}
-      snapOffsetDelta: {x: 0, y: 0}
-=======
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: -166, y: -26}
->>>>>>> NewGunStuff
-      snapCorner: 3
+      snapCorner: 0
       id: Tool Settings
       index: 0
       layout: 1
@@ -420,9 +329,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -141, y: 149}
+      snapOffset: {x: 0, y: 149}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 1
+      snapCorner: 0
       id: unity-grid-and-snap-toolbar
       index: 1
       layout: 1
@@ -433,7 +342,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-scene-view-toolbar
@@ -459,7 +368,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -627,11 +536,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-<<<<<<< HEAD
-      displayed: 1
-=======
       displayed: 0
->>>>>>> NewGunStuff
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -718,12 +623,21 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
-    m_OverlaysVisible: 1
-<<<<<<< HEAD
-  m_WindowGUID: 721ad31501e4649e184e720882bfc0cf
-=======
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 48, y: 48}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: UnityEditor.SceneViewCameraOverlay
+      index: 11
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverriden: 0
+    m_OverlaysVisible: 0
   m_WindowGUID: 792d4dc9c26674d49a6d8bceb66e6388
->>>>>>> NewGunStuff
   m_Gizmos: 1
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
@@ -733,15 +647,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: -109.11389, y: -9.29208, z: -68.03345}
+    m_Target: {x: 208.3419, y: -395.28677, z: -299.25}
     speed: 2
-    m_Value: {x: -109.11389, y: -9.29208, z: -68.03345}
-=======
-    m_Target: {x: 0.64464694, y: 0.8697173, z: 2.405751}
-    speed: 2
-    m_Value: {x: 0.64464694, y: 0.8697173, z: 2.405751}
->>>>>>> NewGunStuff
+    m_Value: {x: 208.3419, y: -395.28677, z: -299.25}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -787,30 +695,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-<<<<<<< HEAD
-    m_Target: {x: 0.055281572, y: -0.83553696, z: 0.084116295, w: 0.5404175}
+    m_Target: {x: -0.1363353, y: -0.86105245, z: 0.38141304, w: -0.3076714}
     speed: 2
-    m_Value: {x: 0.055273153, y: -0.8354097, z: 0.08410348, w: 0.5403352}
+    m_Value: {x: -0.13632601, y: -0.86099386, z: 0.38138708, w: -0.30765045}
   m_Size:
-    m_Target: 51.95086
+    m_Target: 279.61798
     speed: 2
-    m_Value: 51.95086
-=======
-    m_Target: {x: 0.04628543, y: 0.14661817, z: -0.0068678963, w: 0.9880893}
-    speed: 2
-    m_Value: {x: 0.04627492, y: 0.14809963, z: -0.0069372924, w: 0.9878649}
-  m_Size:
-    m_Target: 2.358221
-    speed: 2
-    m_Value: 2.358221
->>>>>>> NewGunStuff
+    m_Value: 279.19916
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0290806
+    m_SpeedNormalized: 0.5121008
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -837,37 +735,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
-  m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
-=======
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
->>>>>>> NewGunStuff
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-<<<<<<< HEAD
-    m_Text: Audio Mixer
-    m_Image: {fileID: 2344599766593239149, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
-    serializedVersion: 2
-    x: 56
-    y: 919
-    width: 2101
-    height: 284
-=======
     m_Text: Animator
     m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 272
+    x: 273
     y: 92
-    width: 759
+    width: 763
     height: 691
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -878,156 +760,6 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-<<<<<<< HEAD
-  m_MixersTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: -86078
-    m_ExpandedIDs: 12eb343c
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 11}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_LayoutStripsOnTop:
-    m_VerticalSplitter:
-      ID: 0
-      splitterInitialOffset: 0
-      currentActiveSplitter: -1
-      realSizes:
-      - 65
-      - 35
-      relativeSizes:
-      - 0.65
-      - 0.35000002
-      minSizes:
-      - 85
-      - 105
-      maxSizes:
-      - 0
-      - 0
-      lastTotalSize: 0
-      splitSize: 6
-      xOffset: 0
-      m_Version: 1
-      oldRealSizes: 
-      oldMinSizes: 
-      oldMaxSizes: 
-      oldSplitSize: 0
-    m_HorizontalSplitter:
-      ID: 0
-      splitterInitialOffset: 0
-      currentActiveSplitter: -1
-      realSizes:
-      - 60
-      - 60
-      - 60
-      - 60
-      relativeSizes:
-      - 0.25
-      - 0.25
-      - 0.25
-      - 0.25
-      minSizes:
-      - 85
-      - 85
-      - 85
-      - 85
-      maxSizes:
-      - 0
-      - 0
-      - 0
-      - 0
-      lastTotalSize: 0
-      splitSize: 6
-      xOffset: 0
-      m_Version: 1
-      oldRealSizes: 
-      oldMinSizes: 
-      oldMaxSizes: 
-      oldSplitSize: 0
-  m_LayoutStripsOnRight:
-    m_VerticalSplitter:
-      ID: 0
-      splitterInitialOffset: 0
-      currentActiveSplitter: -1
-      realSizes:
-      - 60
-      - 60
-      - 60
-      - 60
-      relativeSizes:
-      - 0.25
-      - 0.25
-      - 0.25
-      - 0.25
-      minSizes:
-      - 100
-      - 85
-      - 85
-      - 85
-      maxSizes:
-      - 0
-      - 0
-      - 0
-      - 0
-      lastTotalSize: 0
-      splitSize: 6
-      xOffset: 0
-      m_Version: 1
-      oldRealSizes: 
-      oldMinSizes: 
-      oldMaxSizes: 
-      oldSplitSize: 0
-    m_HorizontalSplitter:
-      ID: 21291
-      splitterInitialOffset: 0
-      currentActiveSplitter: -1
-      realSizes:
-      - 630
-      - 1471
-      relativeSizes:
-      - 0.3
-      - 0.7
-      minSizes:
-      - 160
-      - 160
-      maxSizes:
-      - 0
-      - 0
-      lastTotalSize: 2101
-      splitSize: 6
-      xOffset: 0
-      m_Version: 1
-      oldRealSizes: 
-      oldMinSizes: 
-      oldMaxSizes: 
-      oldSplitSize: 0
-  m_SectionOrder: 00000000030000000100000002000000
-  m_LayoutMode: 1
-  m_SortGroupsAlphabetically: 0
-  m_ShowReferencedBuses: 1
-  m_ShowBusConnections: 0
-  m_ShowBusConnectionsOfSelection: 0
-=======
   m_ViewTransforms:
     m_KeySerializationHelper:
     - {fileID: -6742520390744308301, guid: bd83549b763b54ae0920c9b25a9cc6d7, type: 2}
@@ -1064,7 +796,6 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
->>>>>>> NewGunStuff
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1085,17 +816,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 227
-    y: 165
-    width: 379
-    height: 799
-=======
     x: 8
     y: 92
     width: 264
     height: 691
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1109,29 +833,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: b2effeff
-      m_LastClickedID: -69710
-      m_ExpandedIDs: 889cffff7ef6ffff0efbffffc873000046740000807400008474000092740000
-=======
-      m_SelectedIDs: 46a6ffff
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 78faffff9cfaffffa2faffffa4faffff0efbfffffe710000367200003c72000066720000b4720000
->>>>>>> NewGunStuff
+      m_ExpandedIDs: 0efbffff56760000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Demo Map
-        m_OriginalName: Demo Map
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 29232
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -1161,17 +879,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 607
-    y: 165
-    width: 1352
-    height: 799
-=======
-    x: 272
+    x: 273
     y: 92
-    width: 759
+    width: 763
     height: 691
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1226,17 +937,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-      width: 1352
-      height: 778
-    m_Scale: {x: 0.528125, y: 0.528125}
-    m_Translation: {x: 676, y: 389}
-=======
-      width: 759
+      width: 763
       height: 670
-    m_Scale: {x: 0.29648438, y: 0.29648438}
-    m_Translation: {x: 379.5, y: 335}
->>>>>>> NewGunStuff
+    m_Scale: {x: 0.2980469, y: 0.2980469}
+    m_Translation: {x: 381.5, y: 335}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -1244,21 +948,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -1280
-<<<<<<< HEAD
-      y: -736.56805
+      y: -1123.9843
       width: 2560
-      height: 1473.1361
+      height: 2247.9685
     m_MinimalGUI: 1
-  m_defaultScale: 0.528125
-  m_LastWindowPixelSize: {x: 1352, y: 799}
-=======
-      y: -1129.9077
-      width: 2560
-      height: 2259.8154
-    m_MinimalGUI: 1
-  m_defaultScale: 0.29648438
-  m_LastWindowPixelSize: {x: 759, y: 691}
->>>>>>> NewGunStuff
+  m_defaultScale: 0.2980469
+  m_LastWindowPixelSize: {x: 763, y: 691}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -1284,17 +979,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1961
-    y: 165
-    width: 366
-    height: 799
-=======
     x: 1038
     y: 92
     width: 243
     height: 691
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1338,17 +1026,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 227
-    y: 985
-    width: 2101
-    height: 284
-=======
     x: 8
     y: 804
     width: 1274
     height: 503
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1368,13 +1049,9 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 0
+    m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Fire
-=======
-    - Assets/Scenes
->>>>>>> NewGunStuff
+    - Assets/Sci-Fi Styled Modular Pack/Materials/Palletes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1382,27 +1059,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/JMO Assets/Cartoon FX Remaster/CFXR Prefabs/Fire
-=======
-  - Assets/Scenes
->>>>>>> NewGunStuff
+  - Assets/Sci-Fi Styled Modular Pack/Materials/Palletes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/nparker7317/Desktop/blah/Name-Of-The-Fork
+  m_LastProjectPath: /Users/bstenberg3669/Desktop/NOTF Actual Game/Name of the Fork
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-<<<<<<< HEAD
-    scrollPos: {x: 0, y: 56}
-    m_SelectedIDs: 889f0000
-    m_LastClickedID: 40840
-    m_ExpandedIDs: 00000000667a0000687a00006a7a00006c7a00006e7a0000707a0000727a0000747a0000767a0000787a00007a7a00007c7a00007e7a0000807a0000827a0000847a0000867a0000887a00008a7a00008c7a00008e7a0000907a0000927a0000f27a0000027b00003a7b0000427b0000409700007a9b00007c9b0000929b0000729d0000cc560100f4560100ba5a0100bc5a010000ca9a3bffffff7f
-=======
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2760000
-    m_LastClickedID: 30370
-    m_ExpandedIDs: 0000000080740000827400008474000086740000887400008a74000000ca9a3b
->>>>>>> NewGunStuff
+    scrollPos: {x: 0, y: 221}
+    m_SelectedIDs: a2840000
+    m_LastClickedID: 33954
+    m_ExpandedIDs: 00000000dc7e0000de7e0000e07e0000e27e0000e47e0000e67e0000e87e0000467f0000867f0000a484000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1430,11 +1096,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000667a0000687a00006a7a00006c7a00006e7a0000707a0000727a0000747a0000767a0000787a00007a7a00007c7a00007e7a0000807a0000827a0000847a0000867a0000887a00008a7a00008c7a00008e7a0000907a0000927a0000
-=======
-    m_ExpandedIDs: 0000000080740000827400008474000086740000887400008a740000
->>>>>>> NewGunStuff
+    m_ExpandedIDs: 00000000dc7e0000de7e0000e07e0000e27e0000e47e0000e67e0000e87e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1462,7 +1124,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000f062000038a0000012fb000018fb00007cac000000000000fe73000076bb0000747c0000
+    m_ExpandedInstanceIDs: c6230000f062000038a0000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1510,17 +1172,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 7
-    y: 1003
-    width: 2545
-    height: 293
-=======
     x: 8
     y: 804
-    width: 1268
+    width: 1274
     height: 503
->>>>>>> NewGunStuff
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
