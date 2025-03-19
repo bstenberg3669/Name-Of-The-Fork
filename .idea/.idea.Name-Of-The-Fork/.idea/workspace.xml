@@ -7,7 +7,10 @@
     <list default="true" id="74fc5a88-6e6c-4816-924b-2fb35ead2463" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Name-Of-The-Fork/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level One.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ithappy/Furniture_FREE/Prefabs/air_hockey_001.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ithappy/Furniture_FREE/Prefabs/air_hockey_001.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseSaddness.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PauseSaddness.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Starting Enviormant.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Playernteraction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerInteractUI.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -101,6 +104,7 @@
       <workItem from="1739215390216" duration="989000" />
       <workItem from="1740162291143" duration="3701000" />
       <workItem from="1741888387326" duration="2466000" />
+      <workItem from="1742406702077" duration="4196000" />
     </task>
     <servers />
   </component>

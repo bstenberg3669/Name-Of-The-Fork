@@ -10,6 +10,7 @@ public class PauseSaddness : MonoBehaviour
     public static bool paused = false;
     
     public GameObject pauseMenu;
+    public GameObject Retticle;
 
     
     
@@ -37,6 +38,7 @@ public class PauseSaddness : MonoBehaviour
     public void Resume()
     {
         pauseMenu.SetActive(false);
+        Retticle.SetActive(true);
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1f;
@@ -59,6 +61,7 @@ public class PauseSaddness : MonoBehaviour
     void Pause()
     {
         pauseMenu.SetActive(true);
+        Retticle.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         Time.timeScale = 0f;
