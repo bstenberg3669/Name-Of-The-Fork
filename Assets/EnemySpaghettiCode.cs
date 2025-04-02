@@ -9,23 +9,26 @@ public class EnemySpaghettiCode : MonoBehaviour
     public NavMeshAgent agent;
 
     public LineRenderer bullet;
-    
+
     public Transform target;
     public Transform lagTarget;
-    
+
     float distanceToTarget;
     float lagTimer = 0;
+    
     public float enemyHealth;
     public float enemyDamage = 5f;
     public Transform attackPoint;
     
+
     // Start is called before the first frame update
     void Start()
     {
         if (agent == null)
         {
-            agent = GetComponent<NavMeshAgent>();    
+            agent = GetComponent<NavMeshAgent>();
         }
+
         bullet.enabled = false;
     }
 
@@ -39,18 +42,33 @@ public class EnemySpaghettiCode : MonoBehaviour
     
     
 
-    public void SetTarget()
+public void SetTarget()
     {
         if (target != null)
         {
-            agent.SetDestination(target.position);
             distanceToTarget = Vector3.Distance(transform.position, target.position);
         }
 
-        if (distanceToTarget < 20f)
+        if (distanceToTarget < 40f)
+        {
+            agent.SetDestination(target.position);
+        }
+        
+        if (distanceToTarget < 10f)
         {
             Attack();
         }
+        
+        if (distanceToTarget < 2f)
+        {
+            agent.isStopped = true;
+        }
+        
+        if (distanceToTarget > 2f)
+        {
+            agent.isStopped = false;
+        }
+        
     }
 
     public void Attack()
@@ -63,7 +81,6 @@ public class EnemySpaghettiCode : MonoBehaviour
 
                 if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit))
                 {
-                    Debug.Log(hit.collider.name);
                     if (hit.collider.name == "PlayerCapsule")
                     {
                         hit.collider.GetComponent<PlayerHealth>().playerHealth -= enemyDamage;

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
@@ -18,12 +19,14 @@ public class RaycastGunTest : MonoBehaviour
     public Transform attackPoint; //Point that the gun shoots from
     public ParticleSystem muzzleFlash; //Guess, Einstein
     
-    public float fireRate = 0.1f; //How long until the weapon can fire again
+    public float fireRate = 0.25f; //How long until the weapon can fire again
     public float altRate = 2.5f;
 
     private float fireTimer; //Counts time for fireRate to work
     private float altTimer; //Counts time for altRate to work
 
+    public float heal = 0;
+    
     public float playerDamage = 10f; //Damage the gun does per bullet
     
     
@@ -41,6 +44,7 @@ public class RaycastGunTest : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Fire(); //Execute the fuction if we press the left mouse button
+            
         }
 
         //if (Input.GetButtonUp("Fire2"))
@@ -67,38 +71,52 @@ public class RaycastGunTest : MonoBehaviour
 
     private void Fire()
     {
-        if (fireTimer < fireRate) return;
+        
+        
+        if (fireTimer > fireRate)
+        {
+            Damager();
+            fireAnim();
+            fireTimer = 0f; //Reset timer
+        }
+    }
 
+    private void Damager()
+    {
         RaycastHit hit;
-
         if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
         {
             Debug.Log(hit.collider.name);
             if (hit.collider.name.Contains("Enemy"))
             {
-                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
-                GetComponent<PlayerHealth>().playerHealth += 5;
+                    hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                
+
+                heal += 5;
+
             }
+
+                
+
         }
+    }
+
+    private void fireAnim()
+    {
+        RaycastHit hit;
+
+        Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range);
         
         anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
         muzzleFlash.Play();
-
-        
         
         lrPistol.enabled = true;
         lrPistol.SetPosition(0, muzzleFlash.transform.position);
         lrPistol.SetPosition(1, hit.point);
-
         
-            
-        
-        
-        fireTimer = -0.1f; //Reset timer
-
         Invoke(nameof(PostFire),0.045f);
     }
-
+    
     //private void AltFire()
     //{
         //if (altTimer < altRate) return;

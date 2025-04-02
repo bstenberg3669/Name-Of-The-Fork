@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 22
-    y: 70
+    y: 69
     width: 1421
     height: 1286
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 19
+  controlID: 49
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 20
+  controlID: 50
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 21
+  controlID: 51
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 240
     height: 712
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 262
-    y: 100
+    y: 99
     width: 896
     height: 691
   m_SerializedDataModeController:
@@ -638,7 +638,7 @@ MonoBehaviour:
       sizeOverriden: 0
     m_OverlaysVisible: 1
   m_WindowGUID: 6bd9211c43fad4598a112957c9ff4d9b
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
@@ -647,9 +647,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1702.7491, y: 778.08417, z: -2333.465}
+    m_Target: {x: -5.0135403, y: 17.035183, z: -49.9573}
     speed: 2
-    m_Value: {x: 1702.7491, y: 778.08417, z: -2333.465}
+    m_Value: {x: -5.0135403, y: 17.035183, z: -49.9573}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -695,9 +695,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.12584919, y: 0.044901706, z: -0.0057502156, w: -0.99107456}
+    m_Target: {x: -0.019600838, y: 0.9726688, z: -0.21374153, w: -0.089265354}
     speed: 2
-    m_Value: {x: -0.12584189, y: 0.0448991, z: -0.0057498817, w: -0.99101704}
+    m_Value: {x: -0.019147333, y: 0.97306156, z: -0.21229823, w: -0.087829694}
   m_Size:
     m_Target: 15.656047
     speed: 2
@@ -817,7 +817,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 22
-    y: 100
+    y: 99
     width: 239
     height: 691
   m_SerializedDataModeController:
@@ -832,10 +832,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 418}
-      m_SelectedIDs: be870000
-      m_LastClickedID: 34750
-      m_ExpandedIDs: 143dffff5059fffff0d8fffffad8ffffc2e3ffffe2f3ffff88f9fffff6850000be8700000c880000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 56760000
+      m_LastClickedID: 30294
+      m_ExpandedIDs: 02fbffff7a740000647500007275000066760000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 262
-    y: 100
+    y: 99
     width: 896
     height: 691
   m_SerializedDataModeController:
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_SerializedViewValues:
   - /Users/nparker7317/Desktop/blah/Name-Of-The-Fork/Library/PlayModeViewStates/fb4878852a3a34b8ca94eaf5eafca202
   m_PlayModeViewName: GameView
-  m_ShowGizmos: 1
+  m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
   m_TargetSize: {x: 2560, y: 1440}
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_EnterPlayModeBehavior: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
-  m_Gizmos: 1
+  m_Gizmos: 0
   m_Stats: 0
   m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1160
-    y: 100
+    y: 99
     width: 282
     height: 691
   m_SerializedDataModeController:
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 274
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 22
-    y: 812
+    y: 811
     width: 1421
     height: 503
   m_SerializedDataModeController:
@@ -1061,14 +1061,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/nparker7317/Desktop/blah/Name-Of-The-Fork
+  m_LastProjectPath: /Users/bstenberg3669/Desktop/NOTF Actual Game/Name of the Fork
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 267f0000
-    m_LastClickedID: 32550
-    m_ExpandedIDs: 000000000e7f0000107f0000127f0000147f0000167f0000187f00001a7f00001c7f00001e7f0000207f0000227f0000247f0000267f0000287f00002a7f00002c7f00002e7f0000307f0000327f0000347f0000367f0000387f00003a7f00003c7f00003e7f0000407f0000427f0000447f0000467f0000487f00004a7f00004c7f00004e7f0000507f0000527f000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 447f0000
+    m_LastClickedID: 32580
+    m_ExpandedIDs: 00000000fc7e0000fe7e0000007f0000027f0000047f0000067f0000087f00000a7f00000c7f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1096,7 +1096,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e7f0000107f0000127f0000147f0000167f0000187f00001a7f00001c7f00001e7f0000207f0000227f0000247f0000267f0000287f00002a7f00002c7f00002e7f0000307f0000327f0000347f0000367f0000387f00003a7f00003c7f00003e7f0000407f0000427f0000447f0000467f0000487f00004a7f00004c7f00004e7f0000507f0000527f0000
+    m_ExpandedIDs: 00000000fc7e0000fe7e0000007f0000027f0000047f0000067f0000087f00000a7f00000c7f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000f062000038a0000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
