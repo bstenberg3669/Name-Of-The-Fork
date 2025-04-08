@@ -647,9 +647,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.0135403, y: 17.035183, z: -49.9573}
+    m_Target: {x: 5.7070765, y: 24.752975, z: -42.44538}
     speed: 2
-    m_Value: {x: -5.0135403, y: 17.035183, z: -49.9573}
+    m_Value: {x: 5.7070765, y: 24.752975, z: -42.44538}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -695,20 +695,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.019600838, y: 0.9726688, z: -0.21374153, w: -0.089265354}
+    m_Target: {x: 0.2676456, y: -0.26671913, z: 0.0773264, w: 0.92270505}
     speed: 2
-    m_Value: {x: -0.019147333, y: 0.97306156, z: -0.21229823, w: -0.087829694}
+    m_Value: {x: 0.2676272, y: -0.26670083, z: 0.07732109, w: 0.9226417}
   m_Size:
-    m_Target: 15.656047
+    m_Target: 3.3928092
     speed: 2
-    m_Value: 15.656047
+    m_Value: 3.3928092
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 1.0517957
+    m_SpeedNormalized: 0.52351546
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -833,9 +833,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 56760000
-      m_LastClickedID: 30294
-      m_ExpandedIDs: 02fbffff7a740000647500007275000066760000
+      m_SelectedIDs: c6750000
+      m_LastClickedID: 30150
+      m_ExpandedIDs: 96edfffff8f5fffffcf5ffff02fbffffd4740000d6750000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 8}
+        m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -955,7 +955,7 @@ MonoBehaviour:
   m_defaultScale: 0.35
   m_LastWindowPixelSize: {x: 896, y: 691}
   m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
+  m_NoCameraWarning: 0
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
@@ -1000,7 +1000,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 221.01526
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1061,14 +1061,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/bstenberg3669/Desktop/NOTF Actual Game/Name of the Fork
+  m_LastProjectPath: /Users/nparker7317/Desktop/blah/Name-Of-The-Fork
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 447f0000
-    m_LastClickedID: 32580
-    m_ExpandedIDs: 00000000fc7e0000fe7e0000007f0000027f0000047f0000067f0000087f00000a7f00000c7f000000ca9a3b
+    m_SelectedIDs: 8a7e0000
+    m_LastClickedID: 32394
+    m_ExpandedIDs: 00000000727e0000747e0000767e0000787e00007a7e00007c7e00007e7e0000807e0000827e0000847e0000867e0000887e00008a7e00008c7e00008e7e0000907e0000927e0000947e0000967e0000987e00009a7e00009c7e00009e7e0000a07e0000a27e0000a47e0000a67e0000a87e0000aa7e0000ac7e0000ae7e0000b07e0000b27e0000b47e0000b67e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1096,7 +1096,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc7e0000fe7e0000007f0000027f0000047f0000067f0000087f00000a7f00000c7f0000
+    m_ExpandedIDs: 00000000727e0000747e0000767e0000787e00007a7e00007c7e00007e7e0000807e0000827e0000847e0000867e0000887e00008a7e00008c7e00008e7e0000907e0000927e0000947e0000967e0000987e00009a7e00009c7e00009e7e0000a07e0000a27e0000a47e0000a67e0000a87e0000aa7e0000ac7e0000ae7e0000b07e0000b27e0000b47e0000b67e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1123,7 +1123,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f062000038a0000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

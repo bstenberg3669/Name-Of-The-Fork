@@ -104,7 +104,6 @@ public class RaycastGunTest : MonoBehaviour
     private void fireAnim()
     {
         RaycastHit hit;
-
         Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range);
         
         anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
@@ -113,6 +112,8 @@ public class RaycastGunTest : MonoBehaviour
         lrPistol.enabled = true;
         lrPistol.SetPosition(0, muzzleFlash.transform.position);
         lrPistol.SetPosition(1, hit.point);
+        
+        
         
         Invoke(nameof(PostFire),0.045f);
     }
