@@ -59,12 +59,12 @@ public void SetTarget()
             Attack();
         }
         
-        if (distanceToTarget < 2f)
+        if (distanceToTarget < 4f)
         {
             agent.isStopped = true;
         }
         
-        if (distanceToTarget > 2f)
+        if (distanceToTarget > 4f)
         {
             agent.isStopped = false;
         }
