@@ -7,5 +7,11 @@ public class NPCScript : MonoBehaviour
     public static void Run()
     {
         Debug.Log("I'm scripting it all over the place please send help");
+        
+    }
+
+    public static void sillyTime()
+    {
+        
     }
 }
