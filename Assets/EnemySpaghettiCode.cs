@@ -14,6 +14,9 @@ public class EnemySpaghettiCode : MonoBehaviour
     public Transform lagTarget;
 
     float distanceToTarget;
+    public float eyeSight = 40f;
+    public float stormtrooperSyndrome = 10f;
+    public float ffFreeze = 4f;
     float lagTimer = 0;
     
     public float enemyHealth;
@@ -49,22 +52,22 @@ public void SetTarget()
             distanceToTarget = Vector3.Distance(transform.position, target.position);
         }
 
-        if (distanceToTarget < 40f)
+        if (distanceToTarget < eyeSight)
         {
             agent.SetDestination(target.position);
         }
         
-        if (distanceToTarget < 10f)
+        if (distanceToTarget < stormtrooperSyndrome)
         {
             Attack();
         }
         
-        if (distanceToTarget < 4f)
+        if (distanceToTarget < ffFreeze)
         {
             agent.isStopped = true;
         }
         
-        if (distanceToTarget > 4f)
+        if (distanceToTarget > ffFreeze)
         {
             agent.isStopped = false;
         }

@@ -289,6 +289,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1597067981}
     m_Modifications:
+    - target: {fileID: 6179971859430226796, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7549564184259322936, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7549564184259322936, guid: 3f9b178ccd3b86f4ebbfc1f5a2815e56, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -2987,7 +2995,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -3175,6 +3183,96 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &253587355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 1340147898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &260497598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!1001 &261152529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3234,6 +3332,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3650,6 +3752,91 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 547445590177157599, guid: 1c992eabce9357b40b59009c36972383, type: 3}
+--- !u!1001 &304985430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!1 &311887451 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
@@ -3677,7 +3864,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -4789,9 +4976,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6921,6 +7120,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 918249380}
   m_SourcePrefab: {fileID: 100100000, guid: 09f1c6a02f99ab74c876d175ac77b8d3, type: 3}
+--- !u!4 &475297773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 1893080634}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &485309239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6978,9 +7182,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7095,6 +7311,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 8ad22dca44fd0454983dd1151d42180b, type: 3}
   m_PrefabInstance: {fileID: 1352459997}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &493294221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!1 &496950497
 GameObject:
   m_ObjectHideFlags: 0
@@ -7687,9 +7988,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: m_Speed
       value: 6
@@ -7861,9 +8174,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7926,9 +8251,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9177,9 +9514,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9994,11 +10343,16 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+--- !u!4 &701135643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 1446365939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &710513505 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 968838543949885449, guid: d65998ad76b1b6e4382acd0ae8d627ba, type: 3}
@@ -10836,6 +11190,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 28}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!4 &792696753 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 493294221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &792941017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 968838543949885449, guid: d65998ad76b1b6e4382acd0ae8d627ba, type: 3}
@@ -11012,6 +11371,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d2f0da3998423f44594868ffed55c3e6, type: 3}
       propertyPath: m_Name
@@ -12853,6 +13216,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12920,6 +13287,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13052,9 +13423,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13374,9 +13757,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14532,9 +14927,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15163,9 +15570,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15335,7 +15754,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -15397,9 +15816,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15670,7 +16101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 407108, guid: 8641c0ea619290f46a68c207dc6ff828, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -112.5
+      value: -97.82
       objectReference: {fileID: 0}
     - target: {fileID: 407108, guid: 8641c0ea619290f46a68c207dc6ff828, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18206,9 +18637,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18546,9 +18989,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19004,6 +19459,91 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2711709398588500209, guid: 0f2c184864d68ae42a3688fa6e2a06c8, type: 3}
   m_PrefabInstance: {fileID: 1982913396}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1340147898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!4 &1351741444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 968838543949885449, guid: d65998ad76b1b6e4382acd0ae8d627ba, type: 3}
@@ -20273,6 +20813,91 @@ Transform:
   - {fileID: 1852223282}
   m_Father: {fileID: 202620539}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1446365939
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!4 &1456283498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2711709398588500209, guid: 0f2c184864d68ae42a3688fa6e2a06c8, type: 3}
@@ -20408,9 +21033,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20717,6 +21354,13 @@ Transform:
   - {fileID: 1467939574}
   - {fileID: 1131005677}
   - {fileID: 945213006}
+  - {fileID: 1967437068}
+  - {fileID: 1833666480}
+  - {fileID: 253587355}
+  - {fileID: 2124260420}
+  - {fileID: 701135643}
+  - {fileID: 792696753}
+  - {fileID: 475297773}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1490465932 stripped
@@ -20850,9 +21494,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21820,9 +22476,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21926,7 +22594,7 @@ Transform:
   m_GameObject: {fileID: 1597067980}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -9.17, y: 0.472, z: 6.96}
+  m_LocalPosition: {x: -9.17, y: 0.422, z: 6.96}
   m_LocalScale: {x: 0.2, y: 0.14285715, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23161,7 +23829,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -23392,6 +24060,91 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d65998ad76b1b6e4382acd0ae8d627ba, type: 3}
+--- !u!1001 &1782024369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
 --- !u!4 &1788678574 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 851763948119995110, guid: ea2cfc259e68b2e44b8c38770eb2a864, type: 3}
@@ -23803,6 +24556,11 @@ RectTransform:
   m_AnchoredPosition: {x: -7.5, y: -0.5}
   m_SizeDelta: {x: -35, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!4 &1833666480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 1782024369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1844004646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2711709398588500209, guid: 0f2c184864d68ae42a3688fa6e2a06c8, type: 3}
@@ -23865,9 +24623,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24136,7 +24906,7 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_UseGeometry: 0
+  m_UseGeometry: 1
   m_DefaultArea: 0
   m_GenerateLinks: 0
   m_IgnoreNavMeshAgent: 1
@@ -24404,9 +25174,106 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+--- !u!1001 &1893080634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1487593186}
+    m_Modifications:
+    - target: {fileID: 2220981502688410298, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Name
+      value: Squid Enemy (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.295758
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: lagTarget
+      value: 
+      objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_Speed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8762520834674305070, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25504,6 +26371,11 @@ Transform:
   - {fileID: 756651984}
   m_Father: {fileID: 1232506770}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!4 &1967437068 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 304985430}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1982913396
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25980,9 +26852,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1213995065}
     - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: eyeSight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: ffFreeze
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
       propertyPath: lagTarget
       value: 
       objectReference: {fileID: 1213995065}
+    - target: {fileID: 7257320656124246505, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+      propertyPath: stormtrooperSyndrome
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26251,6 +27135,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26961,6 +27849,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1073214388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2124260420 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2753819017855116378, guid: 71746af4943bb4e7fa1ae4ed9ee3350f, type: 3}
+  m_PrefabInstance: {fileID: 260497598}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2126019468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 968838543949885449, guid: d65998ad76b1b6e4382acd0ae8d627ba, type: 3}
