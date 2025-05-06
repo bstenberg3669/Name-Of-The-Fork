@@ -6200,6 +6200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCSelector: 1
   DialogueSelector: 1
+  fshTalk: 1
   DialogueBackground: {fileID: 900427642}
   DialogueObject: {fileID: 1975961310}
   Fsh: {fileID: 1942871113}
