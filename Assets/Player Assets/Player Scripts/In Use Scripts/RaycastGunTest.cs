@@ -11,7 +11,21 @@ public class RaycastGunTest : MonoBehaviour
 {
     private Animator anim;
 
-    public LineRenderer lrPistol;
+    public GameObject lrPistolObj;
+    public GameObject lrShotgun1Obj;
+    public GameObject lrShotgun2Obj;
+    public GameObject lrShotgun3Obj;
+    public GameObject lrShotgun4Obj;
+    public GameObject lrShotgun5Obj;
+    public GameObject lrShotgun6Obj;
+    private LineRenderer lrPistol;
+    private LineRenderer lrShotgun1;
+    private LineRenderer lrShotgun2;
+    private LineRenderer lrShotgun3;
+    private LineRenderer lrShotgun4;
+    private LineRenderer lrShotgun5;
+    private LineRenderer lrShotgun6;
+    
     
     private float range = 100000000f; //How far the gun can shoot (we don't have a range cap so don't change it)
     private float spread = 0; //Controls the spread if the gun has any
@@ -28,14 +42,28 @@ public class RaycastGunTest : MonoBehaviour
     public float heal = 0;
     
     public float playerDamage = 10f; //Damage the gun does per bullet
+    public float killCounter = 0;
     
     
     
     // Start is called before the first frame update
     void Start()
     {
+        lrPistol = lrPistolObj.GetComponent<LineRenderer>();
+        lrShotgun1 = lrShotgun1Obj.GetComponent<LineRenderer>();
+        lrShotgun2 = lrShotgun2Obj.GetComponent<LineRenderer>();
+        lrShotgun3 = lrShotgun3Obj.GetComponent<LineRenderer>();
+        lrShotgun4 = lrShotgun4Obj.GetComponent<LineRenderer>();
+        lrShotgun5 = lrShotgun5Obj.GetComponent<LineRenderer>();
+        lrShotgun6 = lrShotgun6Obj.GetComponent<LineRenderer>();
         anim = GetComponent<Animator>();
-        lrPistol.enabled = false;
+        lrPistol.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun1.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun2.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun3.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun4.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun5.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun6.GetComponent<LineRenderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -47,20 +75,20 @@ public class RaycastGunTest : MonoBehaviour
             
         }
 
-        //if (Input.GetButtonUp("Fire2"))
-        //{
-            //AltFire(); //Execute alternate fire for weapon on press of right mouse button
-        //}
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            AltFire(); //Execute alternate fire for weapon on press of right mouse button
+        }
 
         if (fireTimer < fireRate)
         {
             fireTimer += Time.deltaTime; //Make the timer time
         }
         
-        //if (altTimer < altRate)
-        //{
-            //altTimer += Time.deltaTime; //Make the timer time
-        //}
+        if (altTimer < altRate)
+        {
+            altTimer += Time.deltaTime; //Make the timer time
+        }
         
         
 
@@ -89,7 +117,12 @@ public class RaycastGunTest : MonoBehaviour
             Debug.Log(hit.collider.name);
             if (hit.collider.name.Contains("Enemy"))
             {
-                    hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                if (hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth <= 0)
+                {
+                    killCounter++;
+                    Debug.Log(killCounter);
+                }
                 
 
                 heal += 5;
@@ -109,46 +142,85 @@ public class RaycastGunTest : MonoBehaviour
         anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
         muzzleFlash.Play();
         
-        lrPistol.enabled = true;
-        lrPistol.SetPosition(0, muzzleFlash.transform.position);
-        lrPistol.SetPosition(1, hit.point);
+        lrPistol.GetComponent<LineRenderer>().enabled = true;
+        lrPistol.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrPistol.GetComponent<LineRenderer>().SetPosition(1, hit.point);
         
         
         
         Invoke(nameof(PostFire),0.045f);
     }
-    
-    //private void AltFire()
-    //{
-        //if (altTimer < altRate) return;
+    private void AltDamager()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.collider.name);
+            if (hit.collider.name.Contains("Enemy"))
+            {
+                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                if (hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth <= 0)
+                {
+                    killCounter++;
+                    Debug.Log(killCounter);
+                }
+                
 
-        //RaycastHit hit;
+                heal += 5;
 
-        //if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
-        //{
-            //Debug.Log(hit.collider.name);
-        //}
+            }
+
+                
+
+        }
+    }
+    private void AltFire()
+    {
+        if (altTimer < altRate) return;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.collider.name);
+        }
         
-        //anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
-        //muzzleFlash.Play();
+        anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
+        muzzleFlash.Play();
 
         
         
-        //lrPistol.enabled = true;
-        //lrPistol.SetPosition(0, muzzleFlash.transform.position);
-        //lrPistol.SetPosition(1, SpreadCalculator());
-        //lrPistol.SetPosition(2, SpreadCalculator());
-        //lrPistol.SetPosition(3, SpreadCalculator());
-        //lrPistol.SetPosition(4, SpreadCalculator());
-        //lrPistol.SetPosition(5, SpreadCalculator());
-        //lrPistol.SetPosition(6, SpreadCalculator());
+        lrShotgun1.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun1.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun1.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
+        
+        lrShotgun2.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun2.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun2.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
+        
+        lrShotgun3.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun3.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun3.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
+        
+        lrShotgun4.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun4.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun4.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
+        
+        lrShotgun5.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun5.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun5.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
+        
+        lrShotgun6.GetComponent<LineRenderer>().enabled = true;
+        lrShotgun6.GetComponent<LineRenderer>().SetPosition(0, muzzleFlash.transform.position);
+        lrShotgun6.GetComponent<LineRenderer>().SetPosition(1, SpreadCalculator());
         
         
         
-        //altTimer = -2.5f; //Reset timer
+        
+        altTimer = -2.5f; //Reset timer
 
-        //Invoke(nameof(PostFire),0.045f);
-    //}
+        Invoke(nameof(PostFire),0.045f);
+    }
 
     
     
@@ -177,7 +249,13 @@ public class RaycastGunTest : MonoBehaviour
 
     private void PostFire()
     {
-        lrPistol.enabled = false;
+        lrPistol.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun1.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun2.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun3.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun4.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun5.GetComponent<LineRenderer>().enabled = false;
+        lrShotgun6.GetComponent<LineRenderer>().enabled = false;
     }
 
     

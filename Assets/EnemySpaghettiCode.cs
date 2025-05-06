@@ -110,6 +110,7 @@ public void SetTarget()
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);   
+            
         }
     }
 }
