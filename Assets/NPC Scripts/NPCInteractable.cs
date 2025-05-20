@@ -22,7 +22,7 @@ public class NPCInteractable : MonoBehaviour
         
         
         Debug.Log("Interact");
-        
+        Time.timeScale = 0f;
         //NPCScript.Run();
 
         if (NPCSelector == 1)
@@ -63,6 +63,7 @@ public class NPCInteractable : MonoBehaviour
                 DialogueBackground.SetActive(false);
                 DialogueObject.SetActive(false);
                 fshTalk = 3;
+                Time.timeScale = 1f;
             }
             
             
@@ -79,5 +80,6 @@ public class NPCInteractable : MonoBehaviour
         Fsh.SetActive(false);
         DialogueBackground.SetActive(false);
         DialogueObject.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
