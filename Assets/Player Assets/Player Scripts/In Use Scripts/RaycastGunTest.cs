@@ -43,6 +43,8 @@ public class RaycastGunTest : MonoBehaviour
     
     public float playerDamage = 10f; //Damage the gun does per bullet
     public float killCounter = 0;
+
+    public float inaccuracyDistance = 5f;
     
     
     
@@ -150,40 +152,26 @@ public class RaycastGunTest : MonoBehaviour
         
         Invoke(nameof(PostFire),0.045f);
     }
-    private void AltDamager()
-    {
-        RaycastHit hit;
-        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
-        {
-            Debug.Log(hit.collider.name);
-            if (hit.collider.name.Contains("Enemy"))
-            {
-                hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
-                if (hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth <= 0)
-                {
-                    killCounter++;
-                    Debug.Log(killCounter);
-                }
-                
-
-                heal += 5;
-
-            }
-
-                
-
-        }
-    }
+    
     private void AltFire()
     {
         if (altTimer < altRate) return;
 
-        RaycastHit hit;
-
-        if (Physics.Raycast(attackPoint.position, attackPoint.transform.forward, out hit, range))
+        
+        int i = 8;
+        for (; i > 0; i--)
         {
-            Debug.Log(hit.collider.name);
+            RaycastHit hit;
+            if (Physics.Raycast(attackPoint.position, GetShootingDirection(), out hit, range))
+            {
+                if (hit.collider.name.Contains("Enemy"))
+                {
+                    hit.collider.GetComponent<EnemySpaghettiCode>().enemyHealth -= playerDamage;
+                }
+                Debug.Log(hit.collider.name);
+            }
         }
+        
         
         anim.CrossFadeInFixedTime("Fire", 0.01f); //Plays Shooting Animation
         muzzleFlash.Play();
@@ -247,6 +235,19 @@ public class RaycastGunTest : MonoBehaviour
         
     }
 
+    Vector3 GetShootingDirection()
+    {
+        Vector3 targetPos= attackPoint.transform.position + attackPoint.transform.forward * range;
+        targetPos = new Vector3(
+            targetPos.x + UnityEngine.Random.Range(-spread, spread),
+            targetPos.x + UnityEngine.Random.Range(-spread, spread),
+            targetPos.x + UnityEngine.Random.Range(-spread, spread)
+            );
+        
+        Vector3 direction = targetPos - attackPoint.position;
+        return direction.normalized;
+    }
+    
     private void PostFire()
     {
         lrPistol.GetComponent<LineRenderer>().enabled = false;
