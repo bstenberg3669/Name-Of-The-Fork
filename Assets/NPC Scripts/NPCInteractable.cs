@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class NPCInteractable : MonoBehaviour
 {
     public float NPCSelector;
@@ -25,6 +25,12 @@ public class NPCInteractable : MonoBehaviour
         Time.timeScale = 0f;
         //NPCScript.Run();
 
+        if (NPCSelector == 0)
+        {
+            PlayGame();
+            Time.timeScale = 1f;
+        }
+        
         if (NPCSelector == 1)
         {
             
@@ -73,6 +79,11 @@ public class NPCInteractable : MonoBehaviour
         
         fshTalk += 1;
         
+    }
+    
+    public void PlayGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void DialougeExterminator()

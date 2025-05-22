@@ -4799,9 +4799,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1822698687}
     - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrPistolObj
+      value: 
+      objectReference: {fileID: 930818854}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
       propertyPath: playerDamage
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun1Obj
+      value: 
+      objectReference: {fileID: 350431030}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun2Obj
+      value: 
+      objectReference: {fileID: 2043667092}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun3Obj
+      value: 
+      objectReference: {fileID: 876863863}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun4Obj
+      value: 
+      objectReference: {fileID: 349633977}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun5Obj
+      value: 
+      objectReference: {fileID: 85793664}
+    - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
+      propertyPath: lrShotgun6Obj
+      value: 
+      objectReference: {fileID: 1822698687}
     - target: {fileID: 5628134574268465306, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
       propertyPath: jumpForce
       value: 9
