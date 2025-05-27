@@ -2228,7 +2228,12 @@ MonoBehaviour:
 
     ESC to pause the game
 
-    Click to shoot when you have a gun!'
+    Click to shoot when you have a gun!
+
+    Find
+    the SpaceBus to take you to the city!
+
+    Secrets are about, so look out!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a0d250d860e74880b33abdcb4a9da2a, type: 2}
   m_sharedMaterial: {fileID: 21280864327797902, guid: 2a0d250d860e74880b33abdcb4a9da2a, type: 2}
@@ -2255,7 +2260,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 42.4
+  m_fontSize: 34.6
   m_fontSizeBase: 160
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2454,7 +2459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &713992387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2918,7 +2923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &904977977
 RectTransform:
   m_ObjectHideFlags: 0
