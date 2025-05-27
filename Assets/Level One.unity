@@ -4808,7 +4808,7 @@ PrefabInstance:
       objectReference: {fileID: 930818854}
     - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
       propertyPath: playerDamage
-      value: 100
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4305592406397483583, guid: 3ca3943b3b73a4e2ab3f931795112602, type: 3}
       propertyPath: lrShotgun1Obj
